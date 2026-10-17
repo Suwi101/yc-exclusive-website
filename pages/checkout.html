@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="../pages/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Checkout | YC EXCLUSIVE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrap nav"><a class="wordmark" href="../index.html">YC</a>
+            <nav aria-label="Main navigation"><a href="../index.html">Home</a><a href="shop.html">Shop</a><a
+                    href="brands.html">Brands</a><a class="bag-link" href="cart.html">Bag (<span
+                        data-cart-count>0</span>)</a></nav>
+        </div>
+    </header>
+    <main class="page-main">
+        <div class="wrap narrow"><span class="eyebrow">Your order</span>
+            <h1>Checkout</h1>
+            <p class="muted">We confirm your order and agree payment with you on WhatsApp before anything is charged.
+            </p>
+            <form class="checkout-form" data-checkout><label>Full name<input name="name" autocomplete="name"
+                        required></label><label>Phone (WhatsApp)<input name="phone" type="tel" autocomplete="tel"
+                        required></label><label>Delivery<select name="delivery">
+                        <option>Kitwe (free delivery)</option>
+                        <option>Outside Kitwe (delivery fee applies)</option>
+                    </select></label><label>Delivery address or town<textarea name="address"
+                        required></textarea></label>
+                <p class="muted">Returns are not allowed. Please check your items, colours and sizes before placing your
+                    order.</p><button class="button" type="submit">Prepare WhatsApp order</button>
+            </form>
+            <section class="order-handoff" data-order-handoff hidden aria-live="polite">
+                <h2>Order ready</h2>
+                <p>Review your order message, then open WhatsApp and tap Send to place your order.</p><a class="button"
+                    data-whatsapp-order target="_blank" rel="noopener">Open WhatsApp to send order</a><label
+                    for="order-message">Order message (copy if WhatsApp does not open)</label><textarea
+                    id="order-message" data-order-message readonly></textarea><button class="button outline"
+                    type="button" data-confirm-sent>I've sent my order</button>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="wrap footer-grid">
+            <div><a class="wordmark" href="../index.html">YC EXCLUSIVE</a>
+                <p class="muted">Fashion with purpose. Identity with intention.</p><a
+                    href="https://wa.me/260966149589">WhatsApp 0966 149 589</a>
+            </div>
+            <div>
+                <h3>Explore</h3><a href="shop.html">Shop</a><a href="brands.html">Our Brands</a>
+            </div>
+            <div>
+                <h3>Help</h3><a href="faq.html">FAQ</a><a href="shipping.html">Shipping</a>
+            </div>
+            <div>
+                <h3>Legal</h3><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms</a>
+            </div>
+        </div>
+    </footer>
+    <script src="../app.js" defer></script>
+</body>
+
+</html>
